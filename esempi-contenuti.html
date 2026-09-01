@@ -1,0 +1,272 @@
+<!DOCTYPE html><html lang="it"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Esempi di Contenuti — Elisa Ughetto</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, Helvetica, Arial, sans-serif; color: #222;
+  background: #fff; line-height: 1.5; }
+.wrap { max-width: 780px; margin: 0 auto; padding: 48px 24px 80px; }
+
+h1 { font-size: 31pt; font-weight: 800; margin-bottom: 8px; color: #12151C; letter-spacing: -0.3pt;
+  position: relative; padding-left: 16px; }
+h1::before { content: ''; position: absolute; left: 0; top: 6px; bottom: 6px; width: 4px;
+  background: #0565D6; border-radius: 2px; }
+.subtitle { font-size: 13pt; color: #0565D6; font-weight: 600; margin-bottom: 12px; padding-left: 16px; }
+.intro { font-size: 12pt; color: #555; max-width: 600px; margin-bottom: 10px; padding-left: 16px; }
+.stats-riga { font-size: 10.5pt; color: #999; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6pt;
+  margin-bottom: 30px; padding-left: 16px; }
+
+.formato { padding: 22px 0; border-top: 1px solid #EFEFEF; }
+.formato:first-of-type { border-top: none; padding-top: 0; }
+.formato-nome { font-size: 17pt; font-weight: 800; color: #0565D6; margin-bottom: 4px;
+  letter-spacing: -0.1pt; }
+.formato-count { font-size: 10pt; color: #AAB4C4; font-weight: 600; margin-left: 6px; text-transform: none; }
+.formato-desc { font-size: 11pt; color: #888; margin-bottom: 14px; font-style: italic; }
+
+.esempi { display: flex; flex-wrap: wrap; gap: 8px; }
+.esempio-chip { display: flex; flex-direction: column; gap: 1px; background: #F7F7F7;
+  border: 1px solid #EAEAEA; border-radius: 8px; padding: 8px 12px; text-decoration: none; }
+.esempio-chip:hover { background: #EFF3FB; border-color: #C9DAF2; }
+.chip-titolo { font-size: 11pt; color: #222; font-weight: 600; }
+.chip-meta { font-size: 9.5pt; color: #999; }
+.chip-link { font-size: 10pt; color: #0565D6; font-weight: 700; margin-top: 2px; }
+.chip-multi-links { display: flex; gap: 10px; margin-top: 3px; }
+.chip-multi-links a { font-size: 10pt; color: #0565D6; font-weight: 700; text-decoration: none; }
+.chip-multi-links a:hover { text-decoration: underline; }
+
+.mancante { background: #FAFAFA; border: 1px dashed #DDD; border-radius: 8px; padding: 16px 18px;
+  margin-top: 36px; font-size: 11.3pt; color: #777; }
+.mancante strong { color: #444; }
+
+.contatti { margin-top: 50px; padding-top: 24px; border-top: 1px solid #E5E5E5; font-size: 12pt; color: #444; }
+.contatti strong { color: #111; }
+.altre-competenze { margin-top: 36px; font-size: 11.5pt; color: #555; }
+.tools-costruiti { margin-top: 40px; padding-top: 24px; border-top: 1px solid #E5E5E5; }
+.tools-list { display: flex; flex-direction: column; gap: 10px; }
+.tool-item { display: flex; gap: 10px; align-items: baseline; }
+.tool-nome { flex: 0 0 150px; font-size: 11.5pt; font-weight: 700; color: #1A1A1A; }
+.tool-desc { font-size: 11pt; color: #666; }
+.tools-nota { font-size: 10.5pt; color: #999; font-style: italic; margin-top: 12px; }
+.altri-contenuti { margin-top: 40px; padding-top: 24px; border-top: 1px solid #E5E5E5; }
+.ai-tools { margin-top: 40px; padding-top: 24px; border-top: 1px solid #E5E5E5; }
+.ai-tools-titolo { font-size: 17pt; font-weight: 800; color: #0565D6; margin-bottom: 12px; letter-spacing: -0.1pt; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.tags span { background: #F2F2F2; color: #444; font-size: 10pt; font-weight: 600;
+  padding: 5px 11px; border-radius: 20px; }
+.brand-legend { font-size: 11pt; color: #666; margin-bottom: 34px; padding-left: 16px; }
+.brand-legend-item { display: inline-flex; align-items: center; gap: 5px; margin-right: 16px; }
+.brand-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+
+
+@media (max-width: 600px) {
+  h1 { font-size: 24pt; text-wrap: balance; }
+  .subtitle { font-size: 12pt; }
+  .intro { font-size: 11pt; }
+}
+
+@media (max-width: 480px) {
+  .tool-item { flex-direction: column; gap: 3px; }
+  .tool-nome { flex: 0 0 auto; }
+}
+
+@media print {
+  body { padding: 0; }
+  #editbar { display: none !important; }
+  .formato { break-inside: avoid; }
+}
+</style>
+
+</head>
+<body>
+
+<div class="wrap">
+  <h1>Esempi di creazione contenuti.</h1>
+  <div class="subtitle">Elisa Ughetto</div>
+  <div class="intro">Esempi di contenuti che ho creato per i brand:</div>
+  <div class="brand-legend"><span class="brand-legend-item"><span class="brand-dot" style="background:#0A82EF"></span>Metodo Universitario</span><span class="brand-legend-item"><span class="brand-dot" style="background:#4FC3E8"></span>Brezza Sailing</span><span class="brand-legend-item"><span class="brand-dot" style="background:#D6A400"></span>Cocina con Claudio</span><span class="brand-legend-item"><span class="brand-dot" style="background:#2D6A4F"></span>Associazione Cori Piemontesi</span></div>
+
+  <div class="formato">
+    <div class="formato-nome">Reels</div>
+    <div class="formato-desc">Video brevi organici — script, montaggio, sottotitoli</div>
+    <div class="esempi">
+      <a class="esempio-chip" href="https://www.instagram.com/reels/C9fbPEZsLCu/" target="_blank">
+        <span class="chip-titolo">Estratto da youtube</span>
+        <span class="chip-link">Vedi →</span>
+      </a>
+      <a class="esempio-chip" href="https://www.instagram.com/reel/C8pYu_3ISVG/" target="_blank">
+        <span class="chip-titolo">Educativo con broll</span>
+        <span class="chip-link">Vedi →</span>
+      </a>
+      <a class="esempio-chip" href="https://www.instagram.com/reel/Cqs5ySAtIDt/" target="_blank">
+        <span class="chip-titolo">Frontman (parlato)</span>
+        <span class="chip-link">Vedi →</span>
+      </a>
+      <a class="esempio-chip" href="https://www.instagram.com/p/DU3g8q0CBOG/" target="_blank">
+        <span class="chip-titolo">Lista / tips</span>
+        <span class="chip-link">Vedi →</span>
+      </a>
+      <a class="esempio-chip" href="https://www.instagram.com/reel/Copq347LJt_/" target="_blank">
+        <span class="chip-titolo">Testimonianze scritte</span>
+        <span class="chip-link">Vedi →</span>
+      </a>
+      <a class="esempio-chip" href="https://www.instagram.com/reel/DKCR4RoIXMr/" target="_blank">
+        <span class="chip-titolo">Obiettivo visite (ha generato migliaia di followers)</span>
+        <span class="chip-link">Vedi →</span>
+      </a>
+      <a class="esempio-chip" href="https://www.instagram.com/reels/DUIsGORjOLs/" target="_blank">
+        <span class="chip-titolo">Meme / comico</span>
+        <span class="chip-link">Vedi →</span>
+      </a>
+      <a class="esempio-chip" href="https://www.instagram.com/reels/DKo-mfboHm3/" target="_blank">
+        <span class="chip-titolo">Meme in trend</span>
+        <span class="chip-link">Vedi →</span>
+      </a>
+      <a class="esempio-chip" href="https://www.instagram.com/reel/DPLyAuTiCXl/" target="_blank">
+        <span class="chip-titolo">Montaggio complesso (soggetto scontornato)</span>
+        <span class="chip-link">Vedi →</span>
+      </a>
+      <a class="esempio-chip" href="https://www.instagram.com/reel/Dak1eKctul0/" target="_blank">
+        <span class="chip-titolo">Esperienziale</span>
+        <span class="chip-link">Vedi →</span>
+      </a>
+      <a class="esempio-chip" href="https://www.instagram.com/reel/CocwK0KNjIZ/" target="_blank">
+        <span class="chip-titolo">Vendita / promozionale</span>
+        <span class="chip-link">Vedi →</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="formato">
+    <div class="formato-nome">Caroselli</div>
+    <div class="formato-desc">Copy, grafica e struttura narrativa su più slide</div>
+    <div class="esempi">
+      <a class="esempio-chip" href="https://www.instagram.com/p/DZPWXrVCGYF/" target="_blank">
+        <span class="chip-titolo">Stile animato</span>
+        <span class="chip-link">Vedi →</span>
+      </a>
+      <a class="esempio-chip" href="https://www.instagram.com/p/DTawHNQiPkq/" target="_blank">
+        <span class="chip-titolo">Divulgativo split screen</span>
+        <span class="chip-link">Vedi →</span>
+      </a>
+      <a class="esempio-chip" href="https://www.instagram.com/p/DIG7Q0jidKV/" target="_blank">
+        <span class="chip-titolo">Consigli pratici</span>
+        <span class="chip-link">Vedi →</span>
+      </a>
+      <a class="esempio-chip" href="https://www.instagram.com/p/DQwzeJUCGi_/" target="_blank">
+        <span class="chip-titolo">Comparativo</span>
+        <span class="chip-link">Vedi →</span>
+      </a>
+      <a class="esempio-chip" href="https://www.instagram.com/p/DI3qZeSCD3C/" target="_blank">
+        <span class="chip-titolo">Educativo</span>
+        <span class="chip-link">Vedi →</span>
+      </a>
+      <a class="esempio-chip" href="https://www.instagram.com/p/DbizkOlCGN9/" target="_blank">
+        <span class="chip-titolo">Vendita tramite commenti</span>
+        <span class="chip-link">Vedi →</span>
+      </a>
+      <a class="esempio-chip" href="https://www.instagram.com/p/Cs9FugqNhR5/" target="_blank">
+        <span class="chip-titolo">Testimonianze</span>
+        <span class="chip-link">Vedi →</span>
+      </a>
+      <a class="esempio-chip" href="https://www.instagram.com/p/DRM3Wh7CLK7/" target="_blank">
+        <span class="chip-titolo">Lancio prodotto</span>
+        <span class="chip-link">Vedi →</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="formato">
+    <div class="formato-nome">Video youtube, Video ads, lead generation</div>
+    <div class="formato-desc">Contenuti pensati per convertire o per formati lunghi</div>
+    <div class="esempi">
+      <a class="esempio-chip" href="https://youtu.be/2ngPb29NERQ" target="_blank">
+        <span class="chip-titolo">Video Sales Letter (VSL)</span>
+        <span class="chip-link">Vedi →</span>
+      </a>
+      <a class="esempio-chip" href="https://youtu.be/U0NHe7axC9M" target="_blank">
+        <span class="chip-titolo">Hook atipico + storia personale (ha generato migliaia di euro)</span>
+        <span class="chip-link">Vedi →</span>
+      </a>
+      <a class="esempio-chip" href="https://youtu.be/UQsuqTlmugs" target="_blank">
+        <span class="chip-titolo">Video animato su voiceover</span>
+        <span class="chip-link">Vedi →</span>
+      </a>
+      <a class="esempio-chip" href="https://www.instagram.com/reel/C90B2HYOYyZ/" target="_blank">
+        <span class="chip-titolo">Testimonianza video (ads)</span>
+        <span class="chip-link">Vedi →</span>
+      </a>
+      <div class="esempio-chip esempio-chip-multi">
+        <span class="chip-titolo">Podcast (registrazione, montaggio, pubblicazione)</span>
+        <span class="chip-multi-links">
+          <a href="https://youtu.be/_0d9omBkuBA" target="_blank">Esempio 1</a>
+          <a href="https://youtu.be/j4KcuXsZwV8" target="_blank">Esempio 2</a>
+        </span>
+      </div>
+      <a class="esempio-chip" href="https://youtu.be/J70KHi5BDzI" target="_blank">
+        <span class="chip-titolo">Video recap esperienza (con testimonianze)</span>
+        <span class="chip-link">Vedi →</span>
+      </a>
+    </div>
+  </div>
+
+
+  <div class="altri-contenuti">
+    <div class="ai-tools-titolo">Altri contenuti creati</div>
+    <div class="tags">
+      <span>Landing page</span>
+      <span>Articoli</span>
+      <span>Webinar (montaggio e scrittura)</span>
+      <span>Montaggio di videocorsi completi</span>
+      <span>Ebook</span>
+    </div>
+  </div>
+
+  <div class="ai-tools">
+    <div class="ai-tools-titolo">Strumenti AI utilizzati</div>
+    <div class="tags">
+      <span>Claude / Claude Code</span>
+      <span>ChatGPT</span>
+      <span>ElevenLabs</span>
+      <span>Higgsfield</span>
+      <span>Generazione video e immagini con AI</span>
+      <span>Midjourney / DALL-E</span>
+      <span>Whisper</span>
+      <span>Perplexity</span>
+      <span>NotebookLM</span>
+      <span>Lovable</span>
+      <span>Canva</span>
+      <span>CapCut</span>
+      <span>Gamma</span>
+      <span>Runway</span>
+      <span>HeyGen</span>
+    </div>
+  </div>
+
+  <div class="tools-costruiti">
+    <div class="ai-tools-titolo">Tools che ho costruito con l'AI</div>
+    <div class="tools-list">
+      <div class="tool-item">
+        <span class="tool-nome">Social TV</span>
+        <span class="tool-desc">Una dashboard che ho progettato e costruito da zero per monitorare i risultati, pianificare il calendario editoriale e ricevere suggerimenti generati dall'AI su cosa funziona meglio.</span>
+      </div>
+      <div class="tool-item">
+        <span class="tool-nome">Content Studio</span>
+        <span class="tool-desc">Un editor pensato per velocizzare la creazione dei caroselli Instagram, con modifica diretta del testo sulla slide e un flusso di approvazione integrato per il team.</span>
+      </div>
+      <div class="tool-item">
+        <span class="tool-nome">Tool testimonianze</span>
+        <span class="tool-desc">Uno strumento che raccoglie automaticamente le recensioni da Trustpilot e le trasforma in creatività pubblicitarie in stile screenshot, pronte per essere usate nelle campagne.</span>
+      </div>
+    </div>
+    <div class="tools-nota">Sono sistemi proprietari, non pubblici — posso mostrare degli esempi in call.</div>
+  </div>
+
+  <div class="contatti">
+    <strong>Elisa Ughetto</strong><br>
+    elisa.ughetto@gmail.com · @elisa.ughetto · linkedin.com/in/elisa-ughetto
+  </div>
+</div>
+
+
+</body></html>
